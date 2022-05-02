@@ -1,0 +1,105 @@
+*{
+    margin: 0 ;
+}
+html{
+    background-color: aqua;
+}
+
+.menu{
+    background-color: brown;
+    text-align: center;
+    margin:0px
+
+}
+
+.menu li{
+    display: inline-block;
+}
+.menu  li a {
+    padding: 30px;
+    color: blue;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover{
+    background-color: lavender;
+    font-size:large
+}
+.central{
+    background-color: indigo;
+    color: blue;
+    text-align: center;
+    overflow: hidden; /*Quitar el espacio sup. */
+    padding: 40px;
+
+}
+.contorno{
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff;
+    /* somb-x | somb-y | desenf-radio | color */
+    text-shadow: -3px 0 rgb(117, 16, 16), 0 3px rgb(165, 32, 32), 1px 0 rgb(164, 36, 36), 0 -3px rgb(168, 14, 14);
+
+}
+.neon{
+    text-align: center; 
+    font-family: Arial; 
+    font-size: 30px; 
+    COLOR: #1278BF; 
+    text-shadow: 0px 0px 9px #cc1c48;
+
+}
+.l3d{
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+
+}
+
+.foto{
+    width: 300px;
+    height: 200px;
+    /*background-color: chartreuse;
+    text-align: center;*/
+}
+
+.foto img{
+    width: 120%;
+    height: 120%;
+    /* la imagen se ajusta al contenido */
+    /*object-fit: contain;*/
+    object-position: 10px 20px;
+
+}
+caption{
+    font-size: 20px ;
+    color: darkturquoise;
+    caption-side: top;
+}
+table{
+    /*cambiar el tamaño de la columnas  */
+    table-layout: auto; width:50%;
+    /*ajustar el texto a la celda
+    table-layout: fixed; */width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.cabeza td{
+background-color: fuchsia;
+color: greenyellow;
+}
+
+td, tr{
+    width: 25%;
+    text-align: center;
+    /*solid, dashed, dotted*/ 
+    border:0.5px solid crimson;
+    padding: 2px;    
+}
