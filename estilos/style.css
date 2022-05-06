@@ -53,7 +53,7 @@ color: #FFF;
     color: rgb(11, 11, 11);
     text-decoration: none;
     display:block;
-    font-family: monospace;
+    font-family:sans-serif
 
 }
 .menu a:hover{
