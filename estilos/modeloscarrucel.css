@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+.s4{
+    height: 100vh ;
+    display: flex;
+    /*los div internos esten centrados */
+    align-items: center;
+}
+.r4{
+    display: flex;
+    /*no  se visualice esten la barra de desplasamiento*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 10px 0;
+}
+
+.flor{
+    min-width: 300px ;
+    max-width: 300px;
+    height: 200px;
+    /*border exterior a la fotos */
+    outline: 4px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+img{
+    height: 100%;
+    width: 100%;
+    /*se usa para espeficar como se debe cambiar el tamaño de un img*/
+    object-fit: cover;
+}
+img:hover{
+transform: scale(1.2);
+}
+body{
+background:url(https://i.gifer.com/ViPW.gif
+)
+}
+h1{
+    text-align: center;
+    font-size: 78px;
+    color: blue;
+    caption-side: top;
+    COLOR: #1278BF; 
+    text-shadow: 0px 0px 9px #cc1c48;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition-property: color;
+    transition-duration: 3s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+
+}
+h1:hover{
+color:rgb(17, 233, 165)
+}
+button {
+    margin: 10px;
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: #b9e1d7;
+    color: #000000;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+button:hover {
+    color: rgb(0, 0, 0);
+}
+
+button span {
+    position: absolute;
+    background: rgb(222, 26, 26);
+    transition: .5s;
+
+}
+
+button span:nth-child(1) {
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2) {
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3) {
+    width: 4px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4) {
+    width: 4px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1) {
+    left: 0;
+}
+
+button:hover span:nth-child(2) {
+    right: 0;
+}
+
+button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
+}
