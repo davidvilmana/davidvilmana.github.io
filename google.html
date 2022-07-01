@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activar google</title>
+</head>
+<body>
+    <h1>empresa los chivos</h1>
+    <p>te invitamos a formar parte de nuestra accediendo a tu centa desde google</p>
+    <button id="google">registrate con google</button>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+
+        import { GoogleAuthProvider,getAuth,signInWithRedirect,getRedirectResult} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyBRq9FO9D2DTam4iPflwn27iurgbM7geWY",
+        authDomain: "usuarios-8684f.firebaseapp.com",
+        projectId: "usuarios-8684f",
+        storageBucket: "usuarios-8684f.appspot.com",
+        messagingSenderId: "152552123157",
+        appId: "1:152552123157:web:a9dfb148005e2df24c171c"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+
+        //creamos un evento con el boton GOOGLE
+        document.getElementById("google").addEventListener("click", function(){
+            signInWithRedirect(auth, provider);
+            getRedirectResult(auth)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access Google APIs.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+
+                // The signed-in user info.
+                const user = result.user;
+                }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+            });
+        })
+    </script>
+</body>
+</html>
