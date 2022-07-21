@@ -3,7 +3,7 @@
 }
 
 body{
-    background: url(/declaracion/love.jpg);
+    background: url(/love.jpg);
     background-repeat: no-repeat;
     /* background-image: linear-gradient(135deg,#00e7d4, #505488, #ef3f80, #161569, #ef3f80, #505488, #00E7D4 ); */
     background-size: 100vw,100vw;
