@@ -1,9 +1,9 @@
 const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () {
-    alert('hola fabian')
-    alert('ME HACES LA PERSONA MAS FELIZ')
-    alert("TE MATO")
+    alert('hola idiota')
+    alert('te veo')
+    alert("te mato")
 });
 
 const noBtn = document.querySelector('#noBtn');
