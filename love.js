@@ -1,9 +1,9 @@
 const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () {
-    alert('SABIA QUE DIRIAS SI')
+    alert('hola fabian')
     alert('ME HACES LA PERSONA MAS FELIZ')
-    alert("TE QUIERO BEBE")
+    alert("TE MATO")
 });
 
 const noBtn = document.querySelector('#noBtn');
