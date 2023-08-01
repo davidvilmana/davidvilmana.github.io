@@ -76,8 +76,8 @@
 
 
 .card {
-    width: 800px;
-    height: 600px; 
+    width: 400px;
+    height: 700px;
     transition: transform 0.3s;
 }
 
