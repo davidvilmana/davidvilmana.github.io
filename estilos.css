@@ -1,0 +1,153 @@
+/* importamos de fuentes de texto de google fomos  */
+@import url('https://fonts.googleapis.com/css2? family= Lilita+One & display=swap');
+
+.fondo {
+    background-image: url("https://i.postimg.cc/4xLGq26q/photo-1649451844813-3130d6f42f8a.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+}
+
+
+
+.contacto {
+    background-image: url("https://i.postimg.cc/d0hFYRn1/photo-1536859355448-76f92ebdc33d.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+}
+/* barra navegacion */
+
+.navbar-custom {
+    background-color: #000; /* Cambia este valor al color de fondo deseado */
+    height: 150px; /* Ajusta este valor para cambiar la altura de la barra de navegación */
+}
+/* texto de navbar */
+
+.neon-text {
+    color: #33FCFF;
+    text-shadow: 0 0 10px #33FCFF, 0 0 20px #33FCFF, 
+    0 0 30px #33FCFF, 0 0 40px #33FCFF, 
+    0 0 50px #33FCFF, 0 0 60px #33FCFF, 0 0 70px #33FCFF;
+    line-height: 70px; /* Ajusta este valor para alinear verticalmente el texto */
+    margin-left: 10px; /* Ajusta este valor para añadir el margen izquierdo deseado */
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+}
+
+.neon-text:hover {
+    color: #0a7678; /* Cambia este valor al color deseado para el efecto hover */
+
+    /* text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066, 0 0 50px #ff0066, 0 0 60px #ff0066, 0 0 70px #ff0066;
+ */
+    filter: drop-shadow(0 0 5px #33FCFF) 
+        drop-shadow(0 0 10px #33FCFF) 
+        drop-shadow(0 0 15px #33FCFF);
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 50px; /* Ajusta este valor para añadir el margen izquierdo deseado */
+}
+
+/* logo */
+
+.navbar-brand img {
+    border-radius: 50%;
+    transition: filter 0.3s;
+/* 
+    transition: transform 0.3s; */
+}
+
+
+.navbar-brand img:hover {
+    /* transform: rotate(360deg); */
+    filter: drop-shadow(0 0 5px #33FCFF) 
+        drop-shadow(0 0 10px #33FCFF) 
+        drop-shadow(0 0 15px #33FCFF);
+}
+/* texto blanco */
+.h23{
+    color: #fff;
+}
+
+
+
+.card {
+    width: 800px;
+    height: 600px; 
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.profile-img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.profile-img:hover img {
+    filter: drop-shadow(0 0 5px #33FCFF) drop-shadow(0 0 10px #33FCFF) drop-shadow(0 0 15px #33FCFF);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer  */
+.footer {
+    background-color: #000; /* Cambia este valor al color de fondo deseado */
+    padding: 20px;
+    text-align: center;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: text-shadow 0.3s;
+    font-size: 24px; /* Ajusta el tamaño de los iconos */
+}
+
+.social-icons a:hover {
+    text-shadow: 0 0 5px #33FCFF,
+                0 0 10px #33FCFF,
+                0 0 15px #33FCFF;
+}
